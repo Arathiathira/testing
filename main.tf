@@ -6,6 +6,7 @@ terraform {
      container_name       = "c1234567abcd"
      key                  = "terraform.tfstate"
      access_keys          ="wQeOkNzkMygUusQIdiRD1xNo1Vtl8GzZ2pc3VpFdZLNv+1CXSORrjMbIuEbVP/awZuo1+4W17sXEeMkDMyhQRQ=="
+     connection_string    ="DefaultEndpointsProtocol=https;AccountName=s1234567abc;AccountKey=wQeOkNzkMygUusQIdiRD1xNo1Vtl8GzZ2pc3VpFdZLNv+1CXSORrjMbIuEbVP/awZuo1+4W17sXEeMkDMyhQRQ==;EndpointSuffix=core.windows.net"
         features {}
     }
 }
