@@ -2,8 +2,8 @@ terraform {
     required_version = "2.13.0"
     backend "azurerm"{
      resource_group_name  =  var.rg
-     storage_account_name = "s1234567abc"
-     container_name       = "c1234567abc"
+     storage_account_name = "s1234567abcd"
+     container_name       = "c1234567abcd"
      key                  = "terraform.tfstate"
      access_keys          ="wQeOkNzkMygUusQIdiRD1xNo1Vtl8GzZ2pc3VpFdZLNv+1CXSORrjMbIuEbVP/awZuo1+4W17sXEeMkDMyhQRQ=="
         features {}
