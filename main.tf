@@ -1,5 +1,5 @@
 terraform {
-    required_version = ">=2.13.0"
+    required_version = ">= 0.11"
     backend "azurerm"{
      resource_group_name  =  var.rg
      storage_account_name = "s1234567abcd"
