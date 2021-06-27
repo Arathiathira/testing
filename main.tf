@@ -1,7 +1,7 @@
 terraform {
     required_version = ">= 0.11"
     backend "azurerm"{
-     resource_group_name  =  var.rg
+     resource_group_name  =  "arsrg"
      storage_account_name = "s1234567abcd"
      container_name       = "c1234567abcd"
      key                  = "terraform.tfstate"
@@ -17,10 +17,10 @@ provider "azurerm"{
 }
 
 resource "azurerm_resource_group" "myrg"{
-    name                =var.rg
-    location            =var.loc
+    name                ="arsrg"
+    location            ="South India"
     tags                ={
-        owner           = var.tag
+        owner           = "Arathi"
     }
 }
 
