@@ -1,7 +1,7 @@
 terraform {
     required_version = ">= 0.11"
     backend "azurerm"{
-     resource_group_name  =  "r1234567abc"
+   //  resource_group_name  =  "r1234567abc"
      storage_account_name = "s1234567abc"
      container_name       = "c1234567abc"
      key                  = "terraform.tfstate"
@@ -12,7 +12,7 @@ terraform {
 }
 
 provider "azurerm"{
-    version ="~>2.46.0"
+    version ="=2.46.0"
     features {}
 }
 
