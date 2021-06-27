@@ -18,7 +18,7 @@ provider "azurerm"{
 
 resource "azurerm_resource_group" "myrg"{
     name                ="arsrg"
-    location            ="South India"
+    location            ="East US"
     tags                ={
         owner           = "Arathi"
     }
@@ -26,7 +26,7 @@ resource "azurerm_resource_group" "myrg"{
   
 resource "azurerm_app_service_plan" "myasp"{
     name                ="Arathiasp"
-    location            ="South India"
+    location            ="East US"
     resource_group_name ="arsrg"
     sku {
     tier = "Standard"
@@ -36,7 +36,7 @@ resource "azurerm_app_service_plan" "myasp"{
 
 resource "azurerm_app_service" "myapps"{
     name                ="Arathiappservice"
-    location            ="South India"
+    location            ="East US"
     resource_group_name ="arsrg"
     app_service_plan_id =azurerm_app_service_plan.myasp.id
 }
