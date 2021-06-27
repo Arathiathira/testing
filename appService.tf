@@ -12,5 +12,5 @@ resource "azurerm_app_service" "myapps"{
     name                ="Arathiappservice"
     location            ="South India"
     resource_group_name ="arsrg"
-    app_service_plan_id =app_service_plan.myasp.id
+    app_service_plan_id =azurerm_app_service_plan.myasp.id
 }
