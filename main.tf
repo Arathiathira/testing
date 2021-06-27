@@ -27,7 +27,7 @@ resource "azurerm_resource_group" "myrg"{
 resource "azurerm_app_service_plan" "myasp"{
     name                ="Arathiasp"
     location            ="East US"
-    resource_group_name ="arsrg"
+    resource_group_name =azurerm_resource_group.myrg.name
     sku {
     tier = "Standard"
     size = "S1"
